@@ -1,0 +1,57 @@
+INSERT INTO category (name)
+VALUES ('Odziez');
+
+INSERT INTO category (name, subcategory_id)
+VALUES ('Kurtki', 1);
+
+INSERT INTO category (name, subcategory_id)
+VALUES ('Spodnie', 1);
+
+INSERT INTO category (name, subcategory_id)
+VALUES ('Bluzy', 1);
+
+INSERT INTO category (name)
+VALUES ('Sport');
+
+INSERT INTO category (name, subcategory_id)
+VALUES ('Pilki', 5);
+
+INSERT INTO category (name, subcategory_id)
+VALUES ('Sporty zimowe', 5);
+
+INSERT INTO category (name, subcategory_id)
+VALUES ('Rowery', 5);
+
+INSERT INTO category (name)
+VALUES ('Komputery');
+
+INSERT INTO category (name, subcategory_id)
+VALUES ('Plyty glowne', 9);
+
+INSERT INTO category (name, subcategory_id)
+VALUES ('Procesory', 9);
+
+INSERT INTO category (name, subcategory_id)
+VALUES ('Ram', 9);
+
+
+
+INSERT INTO address (address, city, country, zipcode)
+VALUES ('5 Marca 1/8', 'Nowogard', 'Polska', '72-200');
+
+INSERT INTO address (address, city, country, zipcode)
+VALUES ('Wojska polskiego 5', 'Szcecin', 'Polska', '72-233');
+
+INSERT INTO address (address, city, country, zipcode)
+VALUES ('Bandurskiego 16a/5', 'Szcecin', 'Polska', '73-434');
+
+
+
+INSERT INTO product (description, image, manufacturer, name, price, quantity, category_id)
+VALUES ('Pilka do uprawiania sportu', '', 'adidas', 'Pilka nozna', 24.5, 3, 2);
+
+INSERT INTO product (description, image, manufacturer, name, price, quantity, category_id)
+VALUES ('Kurtka meska niebieska', '', 'nike', 'Kurtka', 150.0, 1, 1);
+
+INSERT INTO worker (dateCreated, dateLastLogin, active, email, firstName, lastName, password, phone, roles, address_id)
+VALUES (DATE '2015-12-17',DATE '2015-12-17',TRUE, 'artur@zut.com', 'Artur', 'Blaszczyk', '12345', '878765984', 'ROLE_ADMIN', 1);
